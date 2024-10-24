@@ -4,10 +4,148 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="font-raleway">
+<nav class="bg-navbarbg p-4 w-full fixed">
+  <div class="container mx-auto flex justify-end">
+      <div>
+          <ul class="flex px-8 space-x-6 text-white">
+              <li><a href="#" class="hover:text-gray-300 text-2xl px-3">About</a></li>
+              <li><a href="#" class="hover:text-gray-300 text-2xl px-3">Work</a></li>
+              <li><a href="#" class="hover:text-gray-300 text-2xl px-3">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="bg-gradientcolor mx-auto text-center py-50 flex flex-col justify-center min-h-screen">
+  <h1 class="text-6xl font-bold text-white mb-4 text-raleway">Hey I am Mimic</h1>
+  <p class="text-3xl italic text-defaultcolor text-raleway">a web developer</p>
+</section>
+<section id="projects" class="py-20 bg-projectsbg">
+  <div class="container mx-auto text-center">
+    <h2 class="text-5xl font-bold text-white mb-8 underline underline-offset-8 decoration-1">
+      These are some of my projects
+    </h2>
+    
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <a href="#" class="bg-projectbg group">
+        <img src="./../assets/project1.jpg" alt="project" class="project-image h-60 w-full object-cover">
+        <p class="project-title h-14 mt-10 text-2xl text-white flex justify-center items-center">
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300"><</span>
+          &nbsp; Blog Posting &nbsp;
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300">/></span>
+        </p>
+      </a>
+
+      <!-- Project 2 -->
+      <a href="#" class="bg-projectbg group"> <!-- Added group class -->
+        <img src="./../assets/project2.png" alt="project" class="project-image h-60 w-full object-cover">
+        <p class="project-title h-14 mt-10 text-2xl text-white flex justify-center items-center">
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300"><</span>
+          &nbsp; Calculator &nbsp;
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300">/></span>
+        </p>
+      </a>
+
+      <!-- Project 3 -->
+      <a href="#" class="bg-projectbg group"> <!-- Added group class -->
+        <img src="./../assets/project3.png" alt="project" class="project-image h-60 w-full object-cover">
+        <p class="project-title h-14 mt-10 text-2xl text-white flex justify-center items-center">
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300"><</span>
+          &nbsp; CRUD &nbsp;
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300">/></span>
+        </p>
+      </a>
+
+      <!-- Project 4 -->
+      <a href="#" class="bg-projectbg group"> <!-- Added group class -->
+        <img src="./../assets/project4.jpg" alt="project" class="project-image h-60 w-full object-cover">
+        <p class="project-title h-14 mt-10 text-2xl text-white flex justify-center items-center">
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300"><</span>
+          &nbsp; TODO App &nbsp;
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300">/></span>
+        </p>
+      </a>
+
+      <!-- Project 5 -->
+      <a href="#" class="bg-projectbg group"> <!-- Added group class -->
+        <img src="./../assets/project5.png" alt="project" class="project-image h-60 w-full object-cover">
+        <p class="project-title h-14 mt-10 text-2xl text-white flex justify-center items-center">
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300"><</span>
+          &nbsp; Tailwind Portfolio &nbsp;
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300">/></span>
+        </p>
+      </a>
+
+      <!-- Project 6 -->
+      <a href="#" class="bg-projectbg group"> <!-- Added group class -->
+        <img src="./../assets/project6.png" alt="project" class="project-image h-60 w-full object-cover">
+        <p class="project-title h-14 mt-10 text-2xl text-white flex justify-center items-center">
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300"><</span>
+          &nbsp; User Login and Registration &nbsp;
+          <span class="code opacity-0 group-hover:opacity-100 text-orange-500 transition-opacity duration-300">/></span>
+        </p>
+      </a>
+    </div>
+    
+    <!-- Show All Button -->
+    <div class="mt-10 align-middle">
+      <button class="bg-projectbg text-white px-6 py-3 font-normal text-xl hover:bg-navbarbg transition-colors">
+        Show all
+        <i class="fas fa-chevron-right ml-2 ransition-transform duration-300 hover:translate-x-4"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-20 bg-gray-50 bg-gradientcolor">
+  <div class="container mx-auto text-center">
+    <h2 class="text-6xl font-raleway font-bold text-white mb-4">Lets work together...</h2>
+    <p class="italic text-coffecolor mb-8 font-normal">How do you take your coffee?</p>
+    
+    <!-- Social Media and Contact Links -->
+    <div class="flex justify-center space-x-8 mb-8">
+      <!-- Facebook -->
+      <a href="https://facebook.com/your-profile" target="_blank" class="flex items-center text-white transition-transform duration-300 transform hover:translate-y-2 text-2xl">
+        <i class="fab fa-facebook mr-2"></i> <!-- Added margin right to create space between icon and text -->
+        Facebook
+      </a>
+    
+      <!-- GitHub -->
+      <a href="https://github.com/your-profile" target="_blank" class="flex items-center text-white transition-transform duration-300 transform hover:translate-y-2 text-2xl">
+        <i class="fab fa-github mr-2"></i>
+        GitHub
+      </a>
+    
+      <!-- Twitter -->
+      <a href="https://twitter.com/your-profile" target="_blank" class="flex items-center text-white transition-transform duration-300 transform hover:translate-y-2 text-2xl">
+        <i class="fab fa-twitter mr-2"></i>
+        Twitter
+      </a>
+    
+      <!-- Email -->
+      <a href="mailto:your-email@example.com" class="flex items-center text-white transition-transform duration-300 transform hover:translate-y-2 text-2xl">
+        <i class="fas fa-envelope mr-2"></i>
+        Send Email
+      </a>
+    
+      <!-- Call Me -->
+      <a href="tel:+1234567890" class="flex items-center text-white transition-transform duration-300 transform hover:translate-y-2 text-2xl">
+        <i class="fas fa-phone mr-2"></i>
+        Call Me
+      </a>
+    </div>
+    
+  </div>
+</section>
+
+
+
 </body>
 </html>
